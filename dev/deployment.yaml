@@ -32,9 +32,10 @@ metadata:
   namespace: dev
 spec:
   ports:
-  - port: 8080
+  - port: 80
     protocol: TCP
     targetPort: 80
+    nodePort: 8080
   selector:
     app: nginx
-  type: LoadBalancer
+  type: NodePort
