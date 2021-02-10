@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,11 +19,10 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: crystalline407/static-web:1.0.2
+      - image: crystalline407/static-web:1.0.1
         name: nginx
         ports:
         - containerPort: 80
-
 ---
 
 apiVersion: v1
