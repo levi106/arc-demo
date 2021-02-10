@@ -19,7 +19,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: crystalline407/static-web:2.0.3
+      - image: crystalline407/static-web:1.0.2
         name: nginx
         ports:
         - containerPort: 80
